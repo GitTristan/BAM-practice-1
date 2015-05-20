@@ -1,0 +1,7 @@
+<%= form_for @show_listing do |f| %>
+
+<%= f.label "Channels" %>
+
+<%= f.collection_select(:channel_id, Channel.all, :id, :name, ) %>
+
+<% end %>
